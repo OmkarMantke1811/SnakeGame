@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    background: url("../bge.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+#scorebox{
+    position: absolute;
+    top:10px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Alkatra', cursive;
+    border: 10px solid black;
+}
+#hiscorebox{
+    position: absolute;
+    top: 10px;
+    left: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Alkatra', cursive;
+    border: 10px solid black;
+}
+
+#board{
+    background: rgb(145, 219, 145,0.3);
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows:repeat(18,1fr);
+    grid-template-columns:repeat(18,1fr);
+}
+
+.head{
+    background: linear-gradient(rgb(39, 4, 71),rgb(216, 10, 130));
+    border: .25vmin solid black;
+    transform: scale(0.25vmin);
+    
+    border-radius: 9px;
+}
+.snake{
+    
+    background: linear-gradient(rgb(232, 243, 82),rgb(15, 153, 15));
+    border: .25vmin solid ;
+    border-radius: 20px;
+}
+.food{
+    background: linear-gradient(red,orange);
+    border: .25vmin solid black;
+    border-radius: 12px;
+}
